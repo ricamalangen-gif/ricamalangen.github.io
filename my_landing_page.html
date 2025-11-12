@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essence Verse</title>
+  <link rel="shortcut icon" href="everse.png" type="image/x-icon" />
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fc;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+     /* Navigation */
+    nav {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #003366;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a:hover {
+      color: #a000af;
+    }
+
+    /* Header Banner */
+  header.banner-info {
+    background-color: #f7f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .ad-banner {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Main Container */
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .essenceverse-image img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  /* Main Banner */
+  .banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .banner-image {
+      width: 600px;
+      height: 300px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .side-text {
+      flex: 1;
+    }
+
+    .user-image {
+      width: 600px;
+      height: 300px;
+      background: url('essenceverse.png') center/cover no-repeat;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .success-story,
+    .intro {
+      margin-bottom: 1rem;
+    }
+
+    .ad-banner {
+      width: 200px;
+      height: 50px;
+      cursor: pointer;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* CTA Buttons */
+    .cta-button {
+      display: inline-block;
+      background: #5f00cc;
+      padding: 0.75rem 1.5rem;
+      margin: 1rem 1rem 0 0;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #850099;
+    }
+
+     /* Perfume Cards */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .service-item {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      width: 280px;
+      text-align: center;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+
+    .service-image {
+      width: 200px;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .service-text {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .main-banner,
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .banner-image,
+      .user-image,
+      .service-image {
+        width: 100%;
+        height: auto;
+      }
+
+      .cta-button {
+        margin-bottom: 1rem;
+      }
+    }
+
+     /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="banner-info">
+    <a href="https://example-ad-site.com" traget="_blank">
+      <img src="animatedbanner.gif" alt="Ad Banner" class="ad-banner"/>
+    </a>
+  </header>
+
+  <main class="container">
+    <section class="main-banner">
+      <div class="essenceverse-image">
+        <img src="essenceverse.png" alt="Essence Verse Visual"</div>
+        <p class="success-story">
+        “Essence Verse has quickly become a signature scent for those who value elegance, freshness, and self-expression. Customers rave about how the fragrance uplifts their mood and boosts their confidence—whether they're stepping into a meeting, heading out for a date, or simply embracing their daily routine. One user shared, “Wearing Essence Verse feels like wearing my personality—refined, radiant, and unforgettable.” With its seamless service and beautifully crafted product, Essence Verse continues to inspire individuals to lead with presence and leave a lasting impression.”
+        </p>
+        <p class="intro">
+        Essence Verse is a fragrance brand crafted for those who want to leave a lasting impression. With a scent that’s fresh, refined, and effortlessly elegant, it’s designed to match your energy—whether you're presenting your work, meeting new people, or simply owning the moment. Each bottle carries a story of confidence and creativity, making Essence Verse more than just perfume—it’s your presence, redefined.
+        </p>
+        <a href="my_personal_profile.html" class="cta-button">Personal Profile</a>
+        <a href="my_personal_page.html" class="cta-button">Personal Page</a>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="service-item">
+        <div class="service-image" style="background-image:url('lunelle.png');"></div>
+        <strong>LUNELLE</strong><br/>  
+        <p class="service-text">
+          Lunelle is a breath of calm elegance—where cool aquatic notes meet soft iris and a hint of white tea. Wrapped in a tranquil blue aura, it’s crafted for those who move with grace and speak through presence. A scent that whispers sophistication.
+        </p>
+      </div>
+      <div class="service-item">
+        <div class="service-image" style="background-image:url('roselle.png');"></div>
+        <strong>ROSELLE</strong><br/>
+        <p class="service-text"></p>
+          Roselle blooms with the sweetness of rose petals, lychee, and a touch of vanilla cream. Feminine yet spirited, it’s a celebration of charm and warmth. Think of it as a love letter in scent form—soft, joyful, and unforgettable.
+        </p>
+      </div>
+      <div class="service-item">
+        <div class="service-image" style="background-image:url('viorelle.png');"></div>
+        <strong>VIORELLE</strong><br/>
+        <p class="service-text">
+           Viorelle unfolds like a twilight dream—velvety violet, plum, and smoky sandalwood. It’s a scent for the imaginative soul, wrapped in intrigue and allure. Deep, expressive, and unapologetically unique.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Essence Verse. Designed by Rica Mhey A. Malangen.
+  </footer>
+
+</body>
+</html>
